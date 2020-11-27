@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.body {
+    height: 100%;
+    color: rgb(32, 32, 32);
+    width: 100%;
+}
+
+.calculator {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.div__container {
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.div__container, .result, .btn__numbers, .btn__decimal-point, .btn__clear {
+    border: 1px solid rgb(240, 229, 229);
+}
+
+.btn__numbers, .btn__decimal-point, .btn__clear, .btn__operations {
+    border-radius: 2px;
+    justify-content: center;
+    line-height: 2.5rem;
+    margin: .2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn__operations {
+    width: 25%;
+}
+
+.btn__numbers, .btn__decimal-point, .btn__clear, .result {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 650;
+}
+
+.btn__numbers, .btn__decimal-point, .btn__clear {
+    width: 33%;
+}
+
+.btn__numbers, .btn__decimal-point, .btn__clear{
+    background-color: rgb(243, 240, 240);
+}
+
+.btn__equals-sign {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(85, 109, 243);
+    border-radius: 2px;
+    color: rgb(210, 221, 250);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: .2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn__operations {
+    background-color: rgb(197, 193, 193);
+    border: 1px solid rgb(117, 114, 114);
+}
+
+.result {
+    border-radius: 2px;
+    box-sizing: border-box;
+    line-height: 2.5rem;
+    margin: .2rem;
+    padding: 1rem;
+    text-align: right;
+}
+
+.numbers {
+    height: 100%;
+    width: 75%;
+}
+
+.div__container--lower {
+    display: flex;
+};
+
+
+
+
+
