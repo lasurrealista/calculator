@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 .body {
+    font-family: 'Ubuntu', sans-serif;
     height: 100%;
     color: rgb(32, 32, 32);
     width: 100%;
@@ -42,8 +43,7 @@
     width: 25%;
 }
 
-.btn__numbers, .btn__decimal-point, .btn__clear, .result {
-    font-family: 'Ubuntu', sans-serif;
+.btn__numbers, .btn__decimal-point, .btn__clear, .result, .btn__operations {
     font-size: 1.2rem;
     font-weight: 650;
 }
@@ -64,6 +64,8 @@
     color: rgb(210, 221, 250);
     display: flex;
     flex: 1;
+    font-size: 1.2rem;
+    font-weight: 650;
     justify-content: center;
     margin: .2rem;
     padding: 1rem;
@@ -76,12 +78,14 @@
 }
 
 .result {
+    background-color: white;
     border-radius: 2px;
     box-sizing: border-box;
     line-height: 2.5rem;
     margin: .2rem;
     padding: 1rem;
     text-align: right;
+    width: 100%;
 }
 
 .numbers {

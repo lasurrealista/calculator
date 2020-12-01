@@ -9,13 +9,15 @@
 <body>
     <div class="calculator">
         <div class="div__container">
-                <div class="row"></div>
-                <div class="result">0</div>
                 <div class="row">
-                    <button type="button" class="btn__operations"><i class="fas fa-plus"></i></button>
-                    <button type="button" class="btn__operations"><i class="fas fa-minus"></i></button>
-                    <button type="button" class="btn__operations"><i class="fas fa-times"></i></button>
-                    <button type="button" class="btn__operations"><i class="fas fa-divide"></i></button>
+                <input class="result" type="text" value="" disabled>
+                </div>
+                <div class="row">
+                    
+                    <button type="button" class="btn__operations plus">+</button>
+                    <button type="button" class="btn__operations minus">-</i></button>
+                    <button type="button" class="btn__operations times">*</i></button>
+                    <button type="button" class="btn__operations divide">/</i></button>
                 </div>
             <div class="div__container--lower">
                 <div class="numbers">
@@ -40,11 +42,10 @@
                     <button class="btn__clear">C</button>
                 </div>
                 </div>
-                <button class="btn__equals-sign"><i class="fas fa-equals"></i></button>
+                <button class="btn__equals-sign">=</button>
             </div>
         </div>
     </div>
     <script src="./calculator.js"></script>
-    <script src="https://kit.fontawesome.com/eded75ef43.js" crossorigin="anonymous"></script>
 </body>
 </html>
