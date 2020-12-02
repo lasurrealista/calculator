@@ -12,8 +12,8 @@ for (let i = 0; i < numberButtons.length; i += 1) {
 }
 
 for (let i = 0; i < operatorButtons.length; i += 1) {
-    operatorButtons[i].addEventListener('click', function displayNums() {
-        display.value += ' '+operatorButtons[i].textContent+' '; 
+    operatorButtons[i].addEventListener('click', function displaySigns() {
+         display.value += ' '+operatorButtons[i].textContent+' '; 
     });
 }    
 
@@ -23,7 +23,9 @@ function getRowToCalculate() {
     const currentDisplay = display.value;
     const splittedArray = currentDisplay.split(' ');
     const finalResult = getNumbersSigns(splittedArray);
-    display.value += ' = ' + finalResult;
+    isNaN(finalResult)
+    ? display.value = 'ERROR'
+    : display.value += ' = ' + finalResult; 
 };
 
 function getNumbersSigns(array) {
@@ -34,7 +36,7 @@ function getNumbersSigns(array) {
             numbers.push(parseFloat(array[i]));
         } else {
             signs.push(array[i]);
-        }
+        } 
     }
 
     const calculations = {
